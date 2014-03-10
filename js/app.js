@@ -123,6 +123,7 @@ Questions[currentQuestion].choices.find("input:submit").click(function(event){
 	Questions[currentQuestion].validateGuess();
 	Questions[currentQuestion].choices.hide();
 	Questions[currentQuestion].showMoreInfo();
+	console.debug("126");
 
 $("#next").click(function(){
 	Questions[currentQuestion].hideMoreInfo();
@@ -151,6 +152,7 @@ $("#next").click(function(){
 		Questions[currentQuestion].validateGuess();
 		Questions[currentQuestion].choices.hide();
 		Questions[currentQuestion].showMoreInfo();
+		console.debug("155");
 	});
 
 
