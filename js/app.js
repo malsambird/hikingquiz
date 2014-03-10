@@ -152,7 +152,7 @@ $("#next").click(function(){
 		event.preventDefault();
 		Questions[currentQuestion].validateGuess();
 		console.debug("about to remove the form...");
-		Sunil Williams: Questions[currentQuestion].choices.hide();
+		Questions[currentQuestion].choices.hide();
 		console.debug("we have removed the form");
 		Questions[currentQuestion].showMoreInfo();
 		console.debug("155");
