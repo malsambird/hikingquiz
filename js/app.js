@@ -114,6 +114,7 @@ communicate("Ready to go?");
 $("#start").click(function(){
 	hideStartButton();
 	Questions[currentQuestion].displayQuestion();
+	console.debug("question displayed from 117");
 	onNumber++;
 	updateProgress();
 	});
@@ -146,6 +147,7 @@ $("#next").click(function(){
 		onNumber++;
 		updateProgress();
 		Questions[currentQuestion].displayQuestion();
+		console.debug("question displayed from 150");
 		}
 	//On click of the "Guess" button 
 	Questions[currentQuestion].choices.find("input:submit").click(function(event){
