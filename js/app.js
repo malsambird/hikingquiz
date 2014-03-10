@@ -131,6 +131,7 @@ $("#next").click(function(){
 
 	//---- IF at end of the quiz, display f results ----	
 	if (currentQuestion === Questions.length) {
+
 		currentQuestion--;
 		Questions[currentQuestion].hideMoreInfo();
 		Questions[currentQuestion].removeQuestion();
