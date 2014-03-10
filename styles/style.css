@@ -1,7 +1,7 @@
 body * {
 	font-family: 'Varela Round', Verdana, sans-serif;
+	}
 
-}
 /* Header Styling */
 
 #quizheader {
@@ -11,6 +11,7 @@ body * {
 	position: fixed;
 	top: 0;
 	z-index: 1;
+	min-width: 705px;
 
 }
 #quiz_title {
@@ -64,6 +65,7 @@ h1 {
 #background {
 	position: relative;
 	margin-top: 86px;
+	
 }
  #background img {
  	position: relative;
@@ -187,6 +189,13 @@ display:none;
 #options {
 	font-size: 1.1em;
 	line-height: 1.5;
+}
+p {
+	text-align: center;
+}
+
+strong {
+	font-size: 1.3
 }
  /*#ongoing_quiz ul {
  	margin-left: 150px;

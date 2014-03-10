@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- phone/tablet display regular scare -->
-	<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+	<!--<meta name="viewport" content="user-scalable=0, initial-scale=1.0"> -->
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css"/> 
@@ -15,6 +15,7 @@
 	<title>Hiking Quiz</title>
 </head>
 <body>
+
 <!-- Hiking Quiz Header -->
 
 <header id="quizheader">
@@ -24,8 +25,8 @@
 
 	<div id="stats">
 
-		<h3> Progress: <span id="progress"> 0/5 </span></h3>
-		<h3> Score: <span id="score_tracker" class="score"> 100% </span></h3>
+		<h3> Progress: <span id="progress"> <span id="onNumber">0</span>/5</span></h3>
+		<h3> Score: <span id="score_tracker" class="score"> 0 </span></h3>
 		<h3 id="restart"> Restart? </h3>
 	</div>
 	<img id="hiker" src="images/hiker.png"> 
@@ -58,7 +59,7 @@
 						<!-- Q2 -->
 						<input type="radio" name="q2" class="option" value="Argentina"> Argentina <br>
 						<input type="radio" class="option" name="q2" value="Spain"> Spain <br>
-						<input type="radio" class="option" name="q2" value="Ecuador"> Ecuador <br>
+						<input type="radio" class="option" name="q2" value="Peru"> Peru <br>
 						<input type="submit" class="textbox" name="q2"id="guess" value="Guess">
 					</form>	
 						<!-- Q3 -->
@@ -93,17 +94,17 @@
 			</div>
 		<!--Finished Game display-->
 			<div id="end_quiz">
-				<h2 id="feedback"> Good job! </h2>
-				<p> You got <span id="score_results" class="score"> 5/5 </span> correct! </p>
-				<p> Want to learn more about the hiking trails in this quiz? </p>
+				<h2 class="textbox"> You made it!</h2>
+				<p> <strong> You got <span id="score_results" class="score"> 5</span>/5 correct! </strong> Want to learn more about the hiking trails in this quiz? </p>
+				<br>
 				<ul>
 					<li><a href="">Yellow Mountain, China</a></li>
 					<li><a href="">Machu Pichu, Peru</a></li>
-					<li><a href="">Ap Trail</a></li>
-					<li><a href="">Jasper</a></li>
-					<li><a href="">Nepal</a></li>
+					<li><a href="">McAfee Lookoff, Virginia</a></li>
+					<li><a href="">Maligne Lake, Alberta</a></li>
+					<li><a href="">Poon Hill, Nepal</a></li>
 				</ul>
-				<button id="playagain"> Play Again? </button>
+				<button id="playagain" class="textbox"> Play Again? </button>
 			</div>
 
 	</div>
