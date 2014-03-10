@@ -119,7 +119,6 @@ $("#start").click(function(){
 	});
 
 Questions[currentQuestion].choices.find("input:submit").click(function(event){
-	console.debug($(this).attr() );
 	event.preventDefault();
 	Questions[currentQuestion].validateGuess();
 	Questions[currentQuestion].choices.hide();
