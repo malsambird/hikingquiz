@@ -151,7 +151,9 @@ $("#next").click(function(){
 	Questions[currentQuestion].choices.find("input:submit").click(function(event){
 		event.preventDefault();
 		Questions[currentQuestion].validateGuess();
-		Questions[currentQuestion].choices.hide();
+		console.debug("about to remove the form...")
+		Sunil Williams: Questions[currentQuestion].choices.hide();
+		console.debug("we have removed the form")
 		Questions[currentQuestion].showMoreInfo();
 		console.debug("155");
 	});
