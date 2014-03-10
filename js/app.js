@@ -124,7 +124,6 @@ Questions[currentQuestion].choices.find("input:submit").click(function(event){
 	Questions[currentQuestion].choices.hide();
 	Questions[currentQuestion].showMoreInfo();
 
-//});
 $("#next").click(function(){
 	Questions[currentQuestion].hideMoreInfo();
 	currentQuestion++;
