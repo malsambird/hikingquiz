@@ -8,6 +8,7 @@ var points = 0;
 
 var updateProgress = function(){
 	$("#onNumber").text(onNumber);
+	console.debug("update progress debug");
 };
 
 var updateScore = function(){
