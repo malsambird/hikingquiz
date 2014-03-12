@@ -125,7 +125,7 @@ Questions[currentQuestion].choices.find("input:submit").click(function(event){
 	Questions[currentQuestion].validateGuess();
 	Questions[currentQuestion].choices.hide();
 	Questions[currentQuestion].showMoreInfo();
-	console.debug("126");
+	console.debug("line 128");
 
 $("#next").click(function(){
 	Questions[currentQuestion].hideMoreInfo();
@@ -148,17 +148,17 @@ $("#next").click(function(){
 		onNumber++;
 		updateProgress();
 		Questions[currentQuestion].displayQuestion();
-		console.debug("question displayed from 150");
+		console.debug("question displayed from line 151");
 		}
-	//On click of the "Guess" button 
+	//On click of the "Guess" button, validate guess and provide feedback, hide choices, show more info
 	Questions[currentQuestion].choices.find("input:submit").click(function(event){
 		event.preventDefault();
 		Questions[currentQuestion].validateGuess();
-		console.debug("about to remove the form...");
 		Questions[currentQuestion].choices.hide();
 		console.debug("we have removed the form");
 		Questions[currentQuestion].showMoreInfo();
-		console.debug("155");
+		console.debug("line 160");
+
 	});
 
 
@@ -171,6 +171,7 @@ var reset = function(){
 	showStartButton();
 	Questions[currentQuestion].hideMoreInfo();
 	Questions[currentQuestion].removeQuestion();
+	console.debug("reset");
 	communicate("Ready to go?");
 	$("#ongoing_quiz").show();
 	$("#end_quiz").hide();
@@ -184,6 +185,10 @@ var reset = function(){
 	updateProgress();
 	points = 0;
 	updateScore();
+	//for (var i = 0; i < Questions.length; i++) {
+	//	Questions[i].removeQuestion();
+	//}
+	//Questions.forEach(this.removeQuestion);
 };
 
 
